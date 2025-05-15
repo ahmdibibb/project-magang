@@ -1,7 +1,9 @@
+import Header from '@/components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Trispace } from 'next/font/google'
 import { title } from 'process'
+import Navbar from '@/components/Navbar'
 
 const trispace = Trispace({ subsets: ['latin'] })
 
@@ -34,8 +36,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={trispace.className}>
         <main className='px-2 md:px-20'>
-          {/* Header */}
-          {/* Navbar */}
+          <Header/>
+          <Navbar/> 
           <section className='flex justify-between'>
             {children}
             {/* RandomNews */}
