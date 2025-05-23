@@ -1,10 +1,10 @@
-import { getNewsTopHeadlines } from '@/api'
+import { getNewsSearch } from '@/api'
+import Article from '@/components/Article'
 import { removeDuplicateData } from '@/utils'
-import Article from './Article'
 
-const TopHeadlines = async () => {
-  const newsTop = await getNewsTopHeadlines()
-  const filterArticles = removeDuplicateData(newsTop)
+const Automotive = async () => {
+  const newsWorld = await getNewsSearch("automotive")
+  const filterArticles = removeDuplicateData(newsWorld)
 
   return (
     <div className='w-[700px]'>
@@ -17,5 +17,4 @@ const TopHeadlines = async () => {
   )
 }
 
-export default TopHeadlines
-// 28.19 //
+export default Automotive
