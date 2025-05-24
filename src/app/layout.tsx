@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar";
 const trispace = Trispace({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AJ News",
+  title: "ABT",
   description: "news for you where you can find everything what you need",
   icons: {
     icon: [
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   },
   manifest: "/img/site.webmanifest",
   openGraph: {
-    title: "AJ News",
+    title: "ABT",
     description: "news for you where you can find everything what you need",
     type: "article",
     authors: "Ahmad Julaib",
   },
-  keywords: ["AJ News", "News", "News about everything"],
+  keywords: ["ABT", "News", "News about everything"],
 };
 
 export default function RootLayout({
