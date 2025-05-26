@@ -1,10 +1,7 @@
 import { news } from "@/types";
 
-/**
- * Menghapus data artikel duplikat atau tidak valid.
- * Pastikan parameter `articles` adalah array.
- */
-export const removeDuplicateData = (articles: any): news[] => {
+
+export const removeDuplicateData = (articles: news[]): news[] => {
   // Pastikan input adalah array
   if (!Array.isArray(articles)) {
     console.warn("Expected an array of articles, but got:", articles);
