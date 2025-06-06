@@ -18,4 +18,3 @@ const TopHeadlines = async () => {
 }
 
 export default TopHeadlines
-// 28.19 //
